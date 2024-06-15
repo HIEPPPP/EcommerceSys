@@ -1,0 +1,167 @@
+<!-- payment Dialog -->
+<p-toast></p-toast>
+<p-dialog
+    [(visible)]="paymentDialog"
+    [style]="{ width: '1200px' }"
+    header="payment"
+    [modal]="true"
+    class="p-fluid"
+>
+    <p-toolbar styleClass="mb-4">
+        <ng-template pTemplate="left">
+            <div class="my-2">
+                <button
+                    pButton
+                    pRipple
+                    label="Create Payment"
+                    icon="pi pi-plus"
+                    class="p-button-success mr-2"
+                    (click)="createPaymentDialog()"
+                ></button>
+            </div>
+        </ng-template>
+    </p-toolbar>
+    <p-table [value]="payments" [columns]="columnsPayment">
+        <ng-template pTemplate="header" let-columns>
+            <tr>
+                <th *ngFor="let payment of columns">
+                    {{ payment.header }}
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-i="rowIndex" let-payment>
+            <tr>
+                <td style="width: 10%; min-width: 5rem">
+                    <span class="p-column-title">#</span>
+                    {{ i + 1 }}
+                </td>
+                <td style="width: 10%; min-width: 5rem">
+                    <span class="p-column-title">ID</span>
+                    {{ payment.id }}
+                </td>
+                <td style="width: 10%; min-width: 7rem">
+                    <span class="p-column-title">User ID</span>
+                    {{ payment.userId }}
+                </td>
+                <td style="width: 14%; min-width: 10rem">
+                    <span class="p-column-title">Payment Type</span>
+                    {{ payment.paymentType }}
+                </td>
+                <td style="width: 14%; min-width: 10rem">
+                    <span class="p-column-title">Provider</span>
+                    {{ payment.provider }}
+                </td>
+                <td style="width: 14%; min-width: 10rem">
+                    <span class="p-column-title">Account Number</span>
+                    {{ payment.accountNo }}
+                </td>
+                <td style="width: 14%; min-width: 10rem">
+                    <span class="p-column-title">Expiry</span>
+                    {{ payment.expiry }}
+                </td>
+                <td>
+                    <div class="flex">
+                        <button
+                            pButton
+                            pRipple
+                            icon="pi pi-pencil"
+                            class="p-button-rounded p-button-success mr-2"
+                            (click)="editPayment(payment)"
+                        ></button>
+                        <button
+                            pButton
+                            pRipple
+                            icon="pi pi-trash"
+                            class="p-button-rounded p-button-warning"
+                            (click)="deletePayment(payment.id)"
+                        ></button>
+                    </div>
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+</p-dialog>
+<!-- Dialog New Payment -->
+<p-dialog
+    [(visible)]="newPaymentDialog"
+    [style]="{ width: '450px' }"
+    header="Payment Details"
+    [modal]="true"
+    class="p-fluid"
+>
+    <ng-template pTemplate="content">
+        <div class="field">
+            <label for="userId">User ID</label>
+            <input
+                type="text"
+                pInputText
+                id="userId"
+                [(ngModel)]="payment.userId"
+                required
+                autofocus
+                disabled="true"
+            />
+        </div>
+        <div class="field">
+            <label for="paymentType">Payment Type</label>
+            <p-dropdown
+                [options]="paymentType"
+                [(ngModel)]="payment.paymentType"
+                optionLabel="name"
+                optionValue="name"
+                OverlayOptions="1000"
+                placeholder="-----Select Payment Type-----"
+                name="paymentType"
+            />
+        </div>
+        <div class="field">
+            <label for="provider">Provide</label>
+            <input
+                type="text"
+                id="provider"
+                pInputText
+                [(ngModel)]="payment.provider"
+                required
+            />
+        </div>
+        <div class="field">
+            <label for="accountNo">Account Number</label>
+            <input
+                type="number"
+                pInputText
+                id="accountNo"
+                [(ngModel)]="payment.accountNo"
+                required
+                autofocus
+            />
+        </div>
+        <div class="field">
+            <label for="expiry">Expiry</label>
+            <input
+                type="text"
+                pInputText
+                id="expiry"
+                [(ngModel)]="payment.expiry"
+                autofocus
+            />
+        </div>
+    </ng-template>
+    <ng-template pTemplate="footer">
+        <button
+            pButton
+            pRipple
+            label="Cancel"
+            icon="pi pi-times"
+            class="p-button-text"
+            (click)="hidePaymentDialog()"
+        ></button>
+        <button
+            pButton
+            pRipple
+            label="Save"
+            icon="pi pi-check"
+            class="p-button-text"
+            (click)="savePayment(payment)"
+        ></button>
+    </ng-template>
+</p-dialog>

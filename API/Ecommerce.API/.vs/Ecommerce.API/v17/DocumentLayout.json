@@ -1,0 +1,313 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\repositories\\implementation\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\repositories\\implementation\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\data\\ecomsyshiepddcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\data\\ecomsyshiepddcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\models\\domain\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\models\\domain\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\repositories\\implementation\\discountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\repositories\\implementation\\discountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\controllers\\discountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\controllers\\discountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\models\\domain\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\models\\domain\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\services\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\services\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\services\\uaddressservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\services\\uaddressservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\repositories\\implementation\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\repositories\\implementation\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\repositories\\interface\\itokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\repositories\\interface\\itokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\repositories\\interface\\iimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\repositories\\interface\\iimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|d:\\a.net_ecommerce\\ecomsys\\api\\ecommerce.api\\ecommerce.api\\models\\domain\\refreshtokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68A1982F-9E38-40E2-BD39-1D3E917D9DA0}|Ecommerce.API\\Ecommerce.API.csproj|solutionrelative:ecommerce.api\\models\\domain\\refreshtokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Models\\Domain\\CartItem.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Models\\Domain\\CartItem.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Models\\Domain\\CartItem.cs",
+              "RelativeToolTip": "Ecommerce.API\\Models\\Domain\\CartItem.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T07:54:18.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DiscountController.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Controllers\\DiscountController.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Controllers\\DiscountController.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Controllers\\DiscountController.cs",
+              "RelativeToolTip": "Ecommerce.API\\Controllers\\DiscountController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T03:49:22.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UAddressServices.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Services\\UAddressServices.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Services\\UAddressServices.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Services\\UAddressServices.cs",
+              "RelativeToolTip": "Ecommerce.API\\Services\\UAddressServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T03:33:02.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Repositories\\Implementation\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Repositories\\Implementation\\ProductRepository.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Repositories\\Implementation\\ProductRepository.cs",
+              "RelativeToolTip": "Ecommerce.API\\Repositories\\Implementation\\ProductRepository.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T03:32:30.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EcomsysHiepddContext.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Data\\EcomsysHiepddContext.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Data\\EcomsysHiepddContext.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Data\\EcomsysHiepddContext.cs",
+              "RelativeToolTip": "Ecommerce.API\\Data\\EcomsysHiepddContext.cs",
+              "ViewState": "AQIAAI4AAAAAAAAAAAD4v+UAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T03:09:53.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ImagesController.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Controllers\\ImagesController.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Controllers\\ImagesController.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Controllers\\ImagesController.cs",
+              "RelativeToolTip": "Ecommerce.API\\Controllers\\ImagesController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA7wCwAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T08:35:15.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IImageRepository.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Repositories\\Interface\\IImageRepository.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Repositories\\Interface\\IImageRepository.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Repositories\\Interface\\IImageRepository.cs",
+              "RelativeToolTip": "Ecommerce.API\\Repositories\\Interface\\IImageRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T07:43:11.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Models\\Domain\\Product.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Models\\Domain\\Product.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Models\\Domain\\Product.cs",
+              "RelativeToolTip": "Ecommerce.API\\Models\\Domain\\Product.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA7wBUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T07:37:36.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductServices.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Services\\ProductServices.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Services\\ProductServices.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Services\\ProductServices.cs",
+              "RelativeToolTip": "Ecommerce.API\\Services\\ProductServices.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwGAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T07:27:45.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DiscountRepository.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Repositories\\Implementation\\DiscountRepository.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Repositories\\Implementation\\DiscountRepository.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Repositories\\Implementation\\DiscountRepository.cs",
+              "RelativeToolTip": "Ecommerce.API\\Repositories\\Implementation\\DiscountRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T07:26:09.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Ecommerce.API\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAzwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T07:25:41.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Ecommerce.API\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAA7wBAAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T06:52:06.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RefreshTokenModel.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Models\\Domain\\RefreshTokenModel.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Models\\Domain\\RefreshTokenModel.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Models\\Domain\\RefreshTokenModel.cs",
+              "RelativeToolTip": "Ecommerce.API\\Models\\Domain\\RefreshTokenModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T09:49:56.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ITokenRepository.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Repositories\\Interface\\ITokenRepository.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Repositories\\Interface\\ITokenRepository.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Repositories\\Interface\\ITokenRepository.cs",
+              "RelativeToolTip": "Ecommerce.API\\Repositories\\Interface\\ITokenRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T04:24:38.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Program.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Program.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Program.cs",
+              "RelativeToolTip": "Ecommerce.API\\Program.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAAAI0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T04:18:52.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Ecommerce.API\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAA/wDQAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T02:11:50.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TokenRepository.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Repositories\\Implementation\\TokenRepository.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Repositories\\Implementation\\TokenRepository.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Repositories\\Implementation\\TokenRepository.cs",
+              "RelativeToolTip": "Ecommerce.API\\Repositories\\Implementation\\TokenRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T04:24:32.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthServices.cs",
+              "DocumentMoniker": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Services\\AuthServices.cs",
+              "RelativeDocumentMoniker": "Ecommerce.API\\Services\\AuthServices.cs",
+              "ToolTip": "D:\\A.NET_Ecommerce\\ecomsys\\API\\Ecommerce.API\\Ecommerce.API\\Services\\AuthServices.cs",
+              "RelativeToolTip": "Ecommerce.API\\Services\\AuthServices.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowD4AAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T02:11:46.533Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

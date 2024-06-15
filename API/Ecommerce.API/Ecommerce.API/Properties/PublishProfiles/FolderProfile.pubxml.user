@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\providerDOTNET</_PublishTargetUrl>
+    <History>True|2024-06-04T09:15:35.7674846Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="hiepConnectionString">
+      <Value>Server=5.104.82.65%3bDatabase=ecomsys_hiepdd%3bUser Id=ecomsys%3bPassword=yq21oA7A6526%3bTrustServerCertificate=True%3bApplicationIntent=ReadWrite%3bMultiSubnetFailover=False</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Ecommerce.API.Data.EcomsysHiepddContext">
+      <Value>Server=5.104.82.65%3bDatabase=ecomsys_hiepdd%3bUser Id=ecomsys%3bPassword=yq21oA7A6526%3bTrustServerCertificate=True%3bApplicationIntent=ReadWrite%3bMultiSubnetFailover=False</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

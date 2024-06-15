@@ -1,0 +1,299 @@
+<h1>Users</h1>
+<div class="grid">
+    <div class="col-12">
+        <div class="card px-6 py-6">
+            <p-toast></p-toast>
+            <p-toolbar styleClass="mb-4">
+                <ng-template pTemplate="left">
+                    <div class="my-2">
+                        <button
+                            pButton
+                            pRipple
+                            label="New"
+                            icon="pi pi-plus"
+                            class="p-button-success mr-2"
+                            (click)="openNew()"
+                        ></button>
+                    </div>
+                </ng-template>
+
+                <ng-template pTemplate="right">
+                    <p-fileUpload
+                        mode="basic"
+                        accept="image/*"
+                        [maxFileSize]="1000000"
+                        label="Import"
+                        chooseLabel="Import"
+                        class="mr-2 inline-block"
+                    ></p-fileUpload>
+                    <button
+                        pButton
+                        pRipple
+                        label="Export"
+                        icon="pi pi-upload"
+                        class="p-button-help"
+                        (click)="dt.exportCSV()"
+                    ></button>
+                </ng-template>
+            </p-toolbar>
+
+            <p-table
+                #dt
+                [value]="users"
+                [columns]="cols"
+                responsiveLayout="scroll"
+                [rows]="5"
+                [globalFilterFields]="['name', 'status']"
+                [paginator]="true"
+                currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+                [(selection)]="selectedUser"
+                selectionMode="multiple"
+                [rowHover]="true"
+                dataKey="id"
+            >
+                <ng-template pTemplate="caption">
+                    <div
+                        class="flex flex-column md:flex-row md:justify-content-between md:align-items-center"
+                    >
+                        <h5 class="m-0">Manage Products</h5>
+                        <span class="block mt-2 md:mt-0 p-input-icon-left">
+                            <i class="pi pi-search"></i>
+                            <input
+                                pInputText
+                                type="text"
+                                (input)="onGlobalFilter(dt, $event)"
+                                placeholder="Search..."
+                                class="w-full sm:w-auto"
+                            />
+                        </span>
+                    </div>
+                </ng-template>
+                <ng-template pTemplate="header" let-columns>
+                    <tr>
+                        <th
+                            *ngFor="let col of columns"
+                            [pSortableColumn]="col.field"
+                        >
+                            {{ col.header }}
+                            <p-sortIcon [field]="col.field"></p-sortIcon>
+                        </th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-user let-i="rowIndex">
+                    <tr>
+                        <td style="width: 10%; min-width: 5rem">
+                            <span class="p-column-title">#</span>
+                            {{ i + 1 }}
+                        </td>
+                        <td style="width: 10%; min-width: 5rem">
+                            <span class="p-column-title">ID</span>
+                            {{ user.id }}
+                        </td>
+                        <td style="width: 14%; min-width: 10rem">
+                            <span class="p-column-title">Name</span>
+                            {{ user.username }}
+                        </td>
+                        <td style="width: 14%; min-width: 8rem">
+                            <span class="p-column-title">PassWord</span>
+                            {{ user.password }}
+                        </td>
+                        <td style="width: 14%; min-width: 10rem">
+                            <span class="p-column-title">First Name</span>
+                            {{ user.firstName }}
+                        </td>
+                        <td style="width: 14%; min-width: 10rem">
+                            <span class="p-column-title">First Name</span>
+                            {{ user.lastName }}
+                        </td>
+                        <td style="width: 14%; min-width: 10rem">
+                            <span class="p-column-title">First Name</span>
+                            {{ user.telephone }}
+                        </td>
+                        <td>
+                            <div class="flex">
+                                <button
+                                    pButton
+                                    pRipple
+                                    icon="pi pi-map-marker"
+                                    class="p-button-rounded p-button-primary mr-2"
+                                    (click)="
+                                        callSelectedUserAddressDialog(user)
+                                    "
+                                ></button>
+                                <button
+                                    pButton
+                                    pRipple
+                                    icon="pi pi-credit-card"
+                                    class="p-button-rounded p-button-secondary mr-2"
+                                    (click)="
+                                        callSelectedUserPaymentDialog(user)
+                                    "
+                                ></button>
+                                <button
+                                    pButton
+                                    pRipple
+                                    icon="pi pi-pencil"
+                                    class="p-button-rounded p-button-success mr-2"
+                                    (click)="editUser(user)"
+                                ></button>
+                                <button
+                                    pButton
+                                    pRipple
+                                    icon="pi pi-trash"
+                                    class="p-button-rounded p-button-warning"
+                                    (click)="deleteUser(user.id)"
+                                ></button>
+                            </div>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+        <p-dialog
+            [(visible)]="userDialog"
+            [style]="{ width: '450px' }"
+            header="User Details"
+            [modal]="true"
+            class="p-fluid"
+        >
+            <ng-template pTemplate="content">
+                <form [formGroup]="userForm">
+                    <div class="field">
+                        <input
+                            type="text"
+                            pInputText
+                            id="id"
+                            formControlName="id"
+                            hidden
+                        />
+                    </div>
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input
+                            type="text"
+                            pInputText
+                            id="name"
+                            formControlName="username"
+                            required
+                            autofocus
+                            [ngClass]="{
+                                'ng-invalid ng-dirty':
+                                    submitted && f.username.errors
+                            }"
+                        />
+                        <small
+                            class="block p-error"
+                            *ngIf="submitted && f.username.errors"
+                            >Name is required.</small
+                        >
+                    </div>
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input
+                            type="text"
+                            id="password"
+                            pInputText
+                            formControlName="password"
+                            required
+                            rows="3"
+                            cols="20"
+                        />
+                        <small
+                            class="ng-dirty ng-invalid"
+                            *ngIf="submitted && f.password.errors?.['required']"
+                            >Password is required.</small
+                        >
+                        <small
+                            class="ng-dirty ng-invalid"
+                            *ngIf="submitted && f.password.errors?.['minlength']"
+                            >Password is min length 7 characters.</small
+                        >
+                    </div>
+                    <div class="field">
+                        <label for="fistName">First Name</label>
+                        <input
+                            type="text"
+                            pInputText
+                            id="fistName"
+                            formControlName="firstName"
+                            required
+                            autofocus
+                        />
+                        <small
+                            class="ng-dirty ng-invalid"
+                            *ngIf="submitted && f.firstName.errors"
+                            >First Name is required.</small
+                        >
+                    </div>
+                    <div class="field">
+                        <label for="lastName">Last Name</label>
+                        <input
+                            type="text"
+                            pInputText
+                            id="lastName"
+                            formControlName="lastName"
+                            required
+                            autofocus
+                        />
+                        <small
+                            class="ng-dirty ng-invalid"
+                            *ngIf="submitted && f.lastName.errors"
+                            >Last Name is required.</small
+                        >
+                    </div>
+                    <div class="field">
+                        <label for="telephone">Telephone</label>
+                        <input
+                            type="text"
+                            pInputText
+                            id="telephone"
+                            formControlName="telephone"
+                            required
+                            autofocus
+                        />
+                        <small
+                            class="ng-dirty ng-invalid"
+                            *ngIf="
+                                submitted &&
+                                f.telephone.errors &&
+                                f.telephone.errors.required
+                            "
+                            >Telephone is required.</small
+                        >
+                        <small
+                            class="ng-dirty ng-invalid"
+                            *ngIf="
+                                submitted &&
+                                f.telephone.errors &&
+                                f.telephone.errors.invalidPhoneNumber
+                            "
+                            >Telephone must be a valid number.</small
+                        >
+                    </div>
+                </form>
+            </ng-template>
+            <ng-template pTemplate="footer">
+                <button
+                    pButton
+                    pRipple
+                    label="Cancel"
+                    icon="pi pi-times"
+                    class="p-button-text"
+                    (click)="hideDialog()"
+                ></button>
+                <button
+                    pButton
+                    pRipple
+                    label="Save"
+                    icon="pi pi-check"
+                    class="p-button-text"
+                    (click)="saveProduct()"
+                ></button>
+            </ng-template>
+        </p-dialog>
+
+        <app-address></app-address>
+
+        <app-payment></app-payment>
+    </div>
+</div>
