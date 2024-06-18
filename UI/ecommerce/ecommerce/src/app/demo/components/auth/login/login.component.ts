@@ -1,23 +1,47 @@
 import { Component } from '@angular/core';
-import { LayoutService } from 'src/app/layout/service/app.layout.service';
+import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from '../../../service/auth.service';
+import { MessageService } from 'primeng/api';
 
 @Component({
     selector: 'app-login',
     templateUrl: './login.component.html',
-    styles: [`
-        :host ::ng-deep .pi-eye,
-        :host ::ng-deep .pi-eye-slash {
-            transform:scale(1.6);
-            margin-right: 1rem;
-            color: var(--primary-color) !important;
-        }
-    `]
 })
 export class LoginComponent {
+    constructor(
+        private fb: FormBuilder,
+        private authService: AuthService,
+        private router: Router
+    ) {}
 
-    valCheck: string[] = ['remember'];
+    loginForm = this.fb.group({
+        username: ['', [Validators.required, Validators.email]],
+        password: ['', [Validators.required]],
+    });
 
-    password!: string;
+    get username() {
+        return this.loginForm.controls['username'];
+    }
 
-    constructor(public layoutService: LayoutService) { }
+    get password() {
+        return this.loginForm.controls['password'];
+    }
+
+    loginUser() {
+        let user = this.loginForm.value;
+        let loggedData: any;
+        this.authService.onLogin(user).subscribe({
+            next: (res) => {
+                if (res) {
+                    alert('Login Success');
+                    localStorage.setItem('data', JSON.stringify(res));
+                    this.router.navigateByUrl('/dashboard');
+                }
+            },
+            error: (err) => {
+                alert('Username or password is wrong');
+            },
+        });
+    }
 }

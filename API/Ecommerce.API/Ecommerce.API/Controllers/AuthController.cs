@@ -40,11 +40,11 @@ namespace Ecommerce.API.Controllers
                 return BadRequest("User or password incorrect");
             }
             var loginResult = await authServices.Login(loginRequestDto);
-            if(loginResult != null)
+            if(loginResult.JwtToken != null && loginResult.RefreshToken != null)
             {
                 return Ok(loginResult);
             }
-            return Unauthorized();
+            return BadRequest("Username or password wrong!");
         }
 
         [HttpPost("RefreshToken")]

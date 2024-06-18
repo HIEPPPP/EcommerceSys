@@ -2,6 +2,8 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { NotfoundComponent } from './demo/components/notfound/notfound.component';
 import { AppLayoutComponent } from './layout/app.layout.component';
+import { LoginComponent } from './demo/components/auth/login/login.component';
+import { authGuard } from './demo/components/auth/auth.guard';
 
 @NgModule({
     imports: [
@@ -9,10 +11,19 @@ import { AppLayoutComponent } from './layout/app.layout.component';
             [
                 {
                     path: '',
+                    redirectTo: 'auth/login',
+                    pathMatch: 'full',
+                },
+                {
+                    path: 'login',
+                    component: LoginComponent,
+                },
+                {
+                    path: '',
                     component: AppLayoutComponent,
                     children: [
                         {
-                            path: '',
+                            path: 'dashboard',
                             loadChildren: () =>
                                 import(
                                     './demo/components/dashboard/dashboard.module'
@@ -26,13 +37,13 @@ import { AppLayoutComponent } from './layout/app.layout.component';
                         //         ).then((m) => m.UIkitModule),
                         // },
                         // { path: 'utilities', loadChildren: () => import('./demo/components/utilities/utilities.module').then(m => m.UtilitiesModule) },
-                        {
-                            path: 'documentation',
-                            loadChildren: () =>
-                                import(
-                                    './demo/components/documentation/documentation.module'
-                                ).then((m) => m.DocumentationModule),
-                        },
+                        // {
+                        //     path: 'documentation',
+                        //     loadChildren: () =>
+                        //         import(
+                        //             './demo/components/documentation/documentation.module'
+                        //         ).then((m) => m.DocumentationModule),
+                        // },
                         // {
                         //     path: 'blocks',
                         //     loadChildren: () =>
@@ -48,6 +59,7 @@ import { AppLayoutComponent } from './layout/app.layout.component';
                                 ).then((m) => m.PagesModule),
                         },
                     ],
+                    canActivate: [authGuard],
                 },
                 {
                     path: 'auth',
