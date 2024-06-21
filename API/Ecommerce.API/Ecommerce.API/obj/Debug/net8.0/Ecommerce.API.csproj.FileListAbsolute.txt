@@ -275,3 +275,12 @@ D:\A.NET_Ecommerce\ecomsys\API\Ecommerce.API\Ecommerce.API\obj\Debug\net8.0\Ecom
 D:\A.NET_Ecommerce\ecomsys\API\Ecommerce.API\Ecommerce.API\obj\Debug\net8.0\ref\Ecommerce.API.dll
 D:\A.NET_Ecommerce\ecomsys\API\Ecommerce.API\Ecommerce.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\A.NET_Ecommerce\ecomsys\API\Ecommerce.API\Ecommerce.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\A.NET_Ecommerce\ecomsys\API\Ecommerce.API\Ecommerce.API\bin\Debug\net8.0\Serilog.dll
+D:\A.NET_Ecommerce\ecomsys\API\Ecommerce.API\Ecommerce.API\bin\Debug\net8.0\Serilog.AspNetCore.dll
+D:\A.NET_Ecommerce\ecomsys\API\Ecommerce.API\Ecommerce.API\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+D:\A.NET_Ecommerce\ecomsys\API\Ecommerce.API\Ecommerce.API\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+D:\A.NET_Ecommerce\ecomsys\API\Ecommerce.API\Ecommerce.API\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+D:\A.NET_Ecommerce\ecomsys\API\Ecommerce.API\Ecommerce.API\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+D:\A.NET_Ecommerce\ecomsys\API\Ecommerce.API\Ecommerce.API\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+D:\A.NET_Ecommerce\ecomsys\API\Ecommerce.API\Ecommerce.API\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+D:\A.NET_Ecommerce\ecomsys\API\Ecommerce.API\Ecommerce.API\bin\Debug\net8.0\Serilog.Sinks.File.dll

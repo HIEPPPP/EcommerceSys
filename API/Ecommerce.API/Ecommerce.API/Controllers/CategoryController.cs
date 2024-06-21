@@ -26,6 +26,8 @@ namespace Ecommerce.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetCategories()
         {
+            throw new Exception("This is custom exception");
+
             return Ok(await categoryServices.GetCategories());
         }
 

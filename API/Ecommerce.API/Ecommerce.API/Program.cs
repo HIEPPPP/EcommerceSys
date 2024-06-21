@@ -1,5 +1,6 @@
 ﻿using Ecommerce.API.Data;
 using Ecommerce.API.Mapping;
+using Ecommerce.API.Middlewares;
 using Ecommerce.API.Models.Domain;
 using Ecommerce.API.Repositories.Implementation;
 using Ecommerce.API.Repositories.Interface;
@@ -10,14 +11,26 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/HiepddEcomerceSysLog.txt", rollingInterval: RollingInterval.Day)
+    .MinimumLevel.Information()
+    .CreateLogger();
+
+// Add services to the container.
 builder.Services.AddHttpContextAccessor();
 
 builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
 builder.Logging.ClearProviders();
-builder.Logging.AddConsole();
+builder.Logging.AddSerilog(logger);
+
+//builder.Logging.ClearProviders();
+//builder.Logging.AddConsole();
 
 builder.Services.AddCors(options =>
 {
@@ -57,7 +70,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 ClockSkew = TimeSpan.Zero
             });
 
-// Add services to the container.
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -126,6 +138,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware<ExceptionHandlerMiddleware>();
+
 // Cấu hình middleware (middlewares)
 if (!app.Environment.IsDevelopment())
 {
